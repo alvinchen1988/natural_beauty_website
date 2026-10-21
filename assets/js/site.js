@@ -25,7 +25,9 @@ document.querySelectorAll('.faq-item').forEach((item) => {
 
 // Replace design-prototype placeholders with the client-supplied page media.
 const mediaRoot = 'assets/';
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const pathSegments = window.location.pathname.split('/').filter(Boolean);
+const pageName = pathSegments.at(-1) || 'index';
+const currentPage = pageName.endsWith('.html') ? pageName : `${pageName}.html`;
 const image = (src, alt, options = {}) => ({ type: 'image', src, alt, ...options });
 const video = (src, alt, options = {}) => ({ type: 'video', src, alt, ...options });
 

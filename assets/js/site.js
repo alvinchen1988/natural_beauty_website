@@ -391,7 +391,6 @@ if (!reducedMotion) {
     '.gallery-card',
     '.review-card',
     '.contact-cards > div',
-    '.prototype-form',
     '.training-intro',
     '.training-panel',
     '.consolidated-item',

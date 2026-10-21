@@ -19,3 +19,7 @@
 .utility-inner>span:last-child{white-space:nowrap}.utility-inner a{transition:color .2s ease}.utility-inner a:hover{color:#f0d7ad}
 .contact-grid.contact-info-only{grid-template-columns:minmax(0,900px);justify-content:center}.contact-info-only .contact-cards{margin-top:46px}.contact-info-only .contact-cards>div{grid-template-columns:64px minmax(120px,.55fr) minmax(0,1fr);padding:28px 0}
 @media (max-width:620px){.patient-experience-card img{aspect-ratio:3/4}.final-home-cta.without-media .final-home-copy{padding:42px 25px}.image-placeholder.has-real-media.media-contain>img,.image-placeholder.has-real-media.media-contain>video{object-position:center}}
+
+/* Keep the primary booking action accessible in the mobile header. */
+@media (max-width:900px){.header-inner{gap:10px}.brand{order:1;min-width:0}.header-cta{display:inline-flex;order:2;margin-left:auto;min-height:40px;padding-inline:14px;font-size:.62rem;letter-spacing:.07em}.menu-toggle{order:3;flex:0 0 44px;margin-left:0}.primary-nav{order:4}}
+@media (max-width:480px){.header-cta{width:70px;padding-inline:10px;font-size:0}.header-cta:after{content:"Book";font-size:.62rem;letter-spacing:.08em}.brand{gap:9px}.brand-mark{width:42px;height:42px;flex:0 0 42px}.brand-text strong{font-size:1.05rem}.brand-text small{font-size:.48rem;letter-spacing:.14em}}
